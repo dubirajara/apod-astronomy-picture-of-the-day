@@ -1,5 +1,5 @@
 Flask==1.1.1
 gunicorn==19.9.0
 python-decouple==3.1
-redis==3.3.8
+redis==3.3.10
 requests==2.22.0
