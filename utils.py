@@ -20,6 +20,6 @@ def get_data():
     redis.set('image', data['hdurl'])
     redis.set('details', data['explanation'])
 
-    data_content = [redis.get(key).decode("utf-8") for key in redis.keys()]
+    data_content = {key.decode("utf-8"): redis.get(key).decode("utf-8") for key in redis.keys()}
 
     return data_content
